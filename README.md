@@ -6,5 +6,7 @@ Scans for running psexec process every five seconds (this could be changed to on
 
 How to use
 
+Add to every windows device.
+
 1. add PS.ps1 to C:\scripts (or adjust folder name in script then save there)
 2. Import PS.xml to task scheduler in a random folder.

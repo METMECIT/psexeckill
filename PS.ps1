@@ -2,7 +2,7 @@ if (Get-Process PsExec) {
 netstat -ano > C:\scripts\PS.txt
 $To      = "email@domain.com" 
 $From    = "PSEXECrunning@domain.com" 
-$Subject = "PSEXEC RUNNING" 
+$Subject = "PSEXEC RUNNING $env:COMPUTERNAME" 
 $Body    = "PSEXEC RUNNING!!!!" 
 # Create mail message 
 $Message = New-Object System.Net.Mail.MailMessage $From, $To, $Subject, $Body 
@@ -27,7 +27,7 @@ if (Get-Process PsExec64) {
 netstat -ano > C:\scripts\PS.txt
 $To      = "email@domain.com" 
 $From    = "PSEXEC64running@domain.com" 
-$Subject = "PSEXEC64 RUNNING" 
+$Subject = "PSEXEC64 RUNNING $env:COMPUTERNAME" 
 $Body    = "PSEXEC64 RUNNING!!!!" 
 # Create mail message 
 $Message = New-Object System.Net.Mail.MailMessage $From, $To, $Subject, $Body 
